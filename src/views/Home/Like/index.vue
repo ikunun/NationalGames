@@ -1,7 +1,7 @@
 <template>
   <div class="LikeFather">
     <div class="LikeX">
-      <div>猜你喜欢</div>
+      <div>猜你喜欢：</div>
       <div class="LikeTwo" v-for="(i, index) in 5" :key="index">
         <img
           src="../../../assets/img/00d68809-047c-4764-af68-d62782e8dbfa_source.jpg"

@@ -10,8 +10,9 @@ import axios from 'axios'
 import { GoodsAction, GoodsActionIcon, GoodsActionButton } from 'vant';
 import { Sku } from 'vant';
 
-Vue.use(Sku);
 Vue.use(Vant);
+
+Vue.use(Sku);
 Vue.use(Col);
 Vue.use(GoodsAction);
 Vue.use(GoodsActionButton);

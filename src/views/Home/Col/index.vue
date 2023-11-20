@@ -3,27 +3,27 @@
     <div class="colBox">
       <div class="colBoxCircleFather">
         <div class="colCircle">
-          <van-icon name="like-o" size="25" />
+          <van-icon name="goods-collect-o" size="25" />
         </div>
         <div>全部商品</div>
       </div>
       <div class="colBoxCircleFather">
         <div class="colCircle">
-          <van-icon name="like-o" size="25" />
+          <van-icon name="coupon-o" size="25" />
         </div>
-        <div>全部商品</div>
+        <div>优惠券</div>
       </div>
       <div class="colBoxCircleFather">
         <div class="colCircle">
-          <van-icon name="like-o" size="25" />
+          <van-icon name="send-gift-o" size="25" />
         </div>
-        <div>全部商品</div>
+        <div>积分商品</div>
       </div>
       <div class="colBoxCircleFather">
         <div class="colCircle">
-          <van-icon name="like-o" size="25" />
+          <van-icon name="flag-o" size="25" />
         </div>
-        <div>全部商品</div>
+        <div>积分签到</div>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@ export default {
 .colBox {
   width: 100%;
   height: 10vh;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,7 +71,7 @@ export default {
   justify-content: center;
   width: 9vw;
   height: 5vh;
-  background-color: aqua;
+  background-color: #9A99FE;
   border-radius: 50%;
 }
 </style>

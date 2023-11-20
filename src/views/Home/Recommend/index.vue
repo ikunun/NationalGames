@@ -1,7 +1,7 @@
 <template>
   <div class="ReBoxFather">
     <div class="ReBox">
-      <div style="float: left">精品推荐</div>
+      <div style="float: left">精品推荐：</div>
       <div class="ReTwo" v-for="(i, index) in 3" :key="index">
         <div class="ReOne" v-for="(i, index) in 2" :key="index" @click="GoInfo">
           <img
