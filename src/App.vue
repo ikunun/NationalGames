@@ -1,32 +1,33 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <router-view v-show="!show"></router-view>
+    <Home v-show="show"></Home>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Home from "@/views/Home";
+export default {
+  name: "App",
 
-nav {
-  padding: 30px;
-}
+  data() {
+    return {
+      show: true,
+    };
+  },
+  components: {
+    Home,
+  },
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  mounted() {
+    this.$bus.$on("show", (show) => {
+      this.show = show;
+    });
+  },
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
 </style>
