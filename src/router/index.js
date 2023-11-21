@@ -3,6 +3,10 @@ import VueRouter from 'vue-router'
 import Info from '@/views/Info'
 import Home from '@/views/Home'
 import CreateOrder from '@/views/CreateOrder'
+import CommitOrder from '@/views/CommitOrder'
+import Address from '@/views/Address'
+import EditAddresss from '@/views/Address/EditAddresss'
+import AddAddress from '@/views/Address/AddAddress'
 Vue.use(VueRouter)
 
 let originPush = VueRouter.prototype.push
@@ -29,6 +33,29 @@ const routes = [
     path:'/createorder',
     component:CreateOrder,
     name:'createorder'
+  },
+  // 处理提交订单路由
+  {
+    path:'/commitorder',
+    component:CommitOrder,
+    name:'commitorder'
+  },
+  // 个人中心地址组件
+  {
+    path:'/address',
+    component:Address,
+    name:'address'
+  },
+  // 编辑地址
+  {
+    path:'/editaddress',
+    component:EditAddresss,
+    name:'editaddress'
+  },
+    {
+    path:'/addAddress',
+    component:AddAddress,
+    name:'addAddress'
   }
 ]
 

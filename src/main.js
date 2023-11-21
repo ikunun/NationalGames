@@ -9,6 +9,15 @@ import { Col, Row } from 'vant';
 import axios from 'axios'
 import { GoodsAction, GoodsActionIcon, GoodsActionButton } from 'vant';
 import { Sku } from 'vant';
+import { AddressList } from 'vant';
+import { AddressEdit } from 'vant';
+import { Area } from 'vant';
+
+Vue.use(Area);
+
+Vue.use(AddressEdit);
+
+Vue.use(AddressList);
 
 Vue.use(Vant);
 
